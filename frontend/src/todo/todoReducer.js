@@ -15,7 +15,7 @@ const INITIAL_STATE = {
     }]
 }
 
-export default (state = INITIAL_STATE, action) => {
+export default (state = INITIAL_STATE, action) => {    
     switch (action.type) {
         case 'DESCRIPTION_CHANGED':
             return { ...state, description: action.payload }

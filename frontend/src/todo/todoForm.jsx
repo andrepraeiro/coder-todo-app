@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 
 import Grid from '../template/grid'
 import IconButton from '../template/iconButton'
-import changeDescription from './todoActions'
+import {changeDescription} from './todoActions'
 
 const TodoForm = props => {
     const keyHandler = (e) => {
@@ -14,8 +14,9 @@ const TodoForm = props => {
             props.handleClear()
         }
     }
-
+        
     return (
+
         <div role="form" className="todoForm">
             <Grid cols="12 9 10">
                 <input
